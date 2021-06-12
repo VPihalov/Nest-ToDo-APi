@@ -5,13 +5,13 @@ export class Todo {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column('varchar') 
+  @Column() 
   title: string;
 
-  @Column('text')
+  @Column()
   comment: string;
 
-  @Column({default: false})
+  @Column({ default: false })
   isCompleted: boolean;
 
 }
